@@ -1,0 +1,100 @@
+// Main styles 
+.banner {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $secondary; // 1. Variables
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+// 2.Operators
+.container {
+  article[role='main'] {
+    margin-top: 90px;
+    float: left;
+    max-width: 611px / 1170px * 100%;
+  }
+  .pizza[role='complementary'] {
+    margin-bottom: -40px;
+    float: right;
+    max-width: 559px / 1170px * 100%;
+  }
+}
+
+// 3. Mixin
+@mixin page-title {
+  .title {
+  font-size: 50px;
+  margin-bottom: 23px;
+  }
+}
+@include page-title;
+
+.description {
+  font-size: 25px;
+  line-height: 30px;
+  font-size: 'Roboto', sans-serif;
+  margin-bottom: 24px;
+}
+
+
+.btn {
+  display: block;
+  color: $secondary; // 1. Variables 
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid $secondary; // 1. Variables 
+  padding: 16px 0;
+  max-width: 190px;
+  text-align: center;
+}
+
+.box {
+  background-color: $secondary; // 1. Variables 
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-item {
+  padding: 0 55px;
+  box-sizing: content-box;
+}
+
+.picture {
+  margin-top: 40px;
+  width: 260px;
+  height: 160px;
+}
+
+.item-3 {
+  margin-top: 28px;
+  margin-left: -30px;
+}
+
+// 4. Nesting
+a {
+  h3 {
+    .box-text {
+      font-size: 45px;
+      color: $dark; // 1. Variables 
+      margin-bottom: 23px;
+      text-decoration: none;
+    }
+  }
+}
+
+
+p {
+  .box-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $dark; // 1. Variables 
+    line-height: 24px;
+    margin-top: 0;
+  }
+}

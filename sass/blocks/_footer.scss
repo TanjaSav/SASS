@@ -1,0 +1,11 @@
+// Footer styles
+
+.footer {
+  background-image: url(../img/footer.png);
+  padding: 10px 0;
+  color: $secondary; // 1. Variables 
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
